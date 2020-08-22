@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const LoginButton = () => {
+const LoginButton = () => { /* The Custom Login Button */
   return (
     <TouchableOpacity style={styles.customSignIn}>
       <Text style={styles.signInText}>Sign In</Text>

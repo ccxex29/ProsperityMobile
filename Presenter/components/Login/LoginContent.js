@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 
-const LoginContent = () => {
+const LoginContent = () => { /* The Login Form */
   return (
     <>
       <Text style={styles.loginLabel}>Email</Text>

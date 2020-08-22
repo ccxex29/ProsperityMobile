@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 
-const CirclesBg = () => {
+const CirclesBg = () => { /* Useless Circles */
   return (
     <>
       <View style={styles.circleOne} />
