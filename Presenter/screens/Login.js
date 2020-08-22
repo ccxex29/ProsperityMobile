@@ -12,12 +12,13 @@ import CirclesBg from '../components/Login/CirclesBg';
 import LoginTitle from '../components/Login/LoginTitle';
 import LoginContent from '../components/Login/LoginContent';
 import LoginButton from '../components/Login/LoginButton';
+import PageSafe from '../components/Compatibility/PageSafe';
 
 const Login = () => {
     return (
         <>
             <StatusBar backgroundColor={'transparent'} translucent />
-            <SafeAreaView>
+            <SafeAreaView style={ PageSafe.StatusBarSafePage }>
                 <TouchableWithoutFeedback onPress={ Keyboard.dismiss } accessible={ false }>
                     <View style={ styles.loginPage }>
                         <View style={ styles.circlePos }>
@@ -39,7 +40,6 @@ const Login = () => {
 
 const styles = StyleSheet.create({
     loginPage: {
-        backgroundColor: '#007388',
         flex: 1,
         justifyContent: 'flex-end',
         alignItems: 'flex-end',

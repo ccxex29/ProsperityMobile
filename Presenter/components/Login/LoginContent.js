@@ -8,10 +8,6 @@ const LoginContent = () => { /* The Login Form */
       <View style={styles.loginInput}>
         <TextInput style={styles.loginInputText} />
       </View>
-      {/*<Text style={styles.loginLabel}>Password</Text>*/}
-      {/*<View style={styles.loginInput}>*/}
-      {/*  <TextInput style={styles.loginInputText} />*/}
-      {/*</View>*/}
     </>
   );
 };

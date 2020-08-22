@@ -1,26 +1,28 @@
 import React from 'react';
-import {Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { Text, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/dist/AntDesign';
 
 const LoginButton = () => { /* The Custom Login Button */
   return (
-    <TouchableOpacity style={styles.customSignIn}>
-      <Text style={styles.signInText}>Sign In</Text>
+    <TouchableOpacity style={ styles.customSignIn }>
+      <Text style={ styles.signInText }>Sign In <Icon name={'arrowright'} size={20} /></Text>
+
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   customSignIn: {
+    flexDirection: 'row',
     paddingVertical: 0,
-    height: 32,
+    height: 30,
     paddingLeft: 36,
-    width: 150,
+    width: 160,
     backgroundColor: '#AA2C2C',
     borderBottomLeftRadius: 50,
     borderTopLeftRadius: 50,
-    marginBottom: 16,
+    marginBottom: 14,
     position: 'relative',
-    // bottom: 0,
     transform: [
       {
         scaleY: 2,
@@ -30,8 +32,8 @@ const styles = StyleSheet.create({
   signInText: {
     color: 'white',
     fontSize: 24,
-    fontWeight: 'bold',
-    marginHorizontal: 10,
+    fontFamily: 'Gilroy-Light',
+    marginRight: 8,
     overflow: 'hidden',
     transform: [
       {
