@@ -16,6 +16,8 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ProsperityMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ProsperityMobileTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		1477E825856E499695CB470D /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979095B0D17542ED921812C2 /* Gilroy-ExtraBold.otf */; };
+		EBDFDD9791264F50871AC5D4 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E5A8C065314D93B63553B7 /* Gilroy-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ProsperityMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		979095B0D17542ED921812C2 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; name = "Gilroy-ExtraBold.otf"; path = "../assets/fonts/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C7E5A8C065314D93B63553B7 /* Gilroy-Light.otf */ = {isa = PBXFileReference; name = "Gilroy-Light.otf"; path = "../assets/fonts/Gilroy-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				00E356EF1AD99517003FC87E /* ProsperityMobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				6CABFDF3F20D41AA8BFDB117 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +161,16 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		6CABFDF3F20D41AA8BFDB117 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				979095B0D17542ED921812C2 /* Gilroy-ExtraBold.otf */,
+				C7E5A8C065314D93B63553B7 /* Gilroy-Light.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -295,6 +310,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1477E825856E499695CB470D /* Gilroy-ExtraBold.otf in Resources */,
+				EBDFDD9791264F50871AC5D4 /* Gilroy-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
