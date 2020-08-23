@@ -47,9 +47,10 @@ const styles = StyleSheet.create({
     headerRightStick: {
         flexDirection: 'row',
         justifyContent: 'flex-end',
+        alignContent: 'center',
     },
     iconNormalize: {
-        paddingVertical: 14,
+        paddingVertical: 16,
         paddingLeft: 16,
     },
     iconBack: {

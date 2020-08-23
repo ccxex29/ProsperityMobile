@@ -15,7 +15,7 @@ const LoginContent = () => { /* The Login Form */
 const styles = StyleSheet.create({
   loginLabel: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 12,
     fontFamily: 'Gilroy-Light',
   },

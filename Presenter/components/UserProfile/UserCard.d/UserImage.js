@@ -20,7 +20,6 @@ const UserImage = () => {
 const styles = StyleSheet.create({
     imgLayout: {
         justifyContent: 'center',
-        marginLeft: 24,
     },
     img: {
         height: 120,

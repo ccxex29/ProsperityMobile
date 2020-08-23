@@ -15,13 +15,12 @@ const UserMainCard = () => {
 const styles = StyleSheet.create({
     cardContainer: {
         flexDirection: 'row',
-        flex: 1,
+        padding: 24,
         marginHorizontal: 24,
         marginTop: 16,
         marginBottom: 36,
         backgroundColor: 'white',
         borderRadius: 10,
-        height: 200,
         shadowColor: 'black',
         shadowOffset: {
             width: 0,
