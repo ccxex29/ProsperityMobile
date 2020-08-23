@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Alert } from 'react-native';
 import IconFA from 'react-native-vector-icons/dist/FontAwesome';
 import IconAnt from 'react-native-vector-icons/dist/AntDesign';
 import IconEnt from 'react-native-vector-icons/dist/Entypo';
@@ -7,10 +7,31 @@ import IconEnt from 'react-native-vector-icons/dist/Entypo';
 const HeaderProfile = () => {
     return (
         <View style={styles.headerProfile}>
-            <IconAnt.Button backgroundColor={'transparent'} name={'arrowleft'} size={20} color={'white'} style={ styles.iconBack } />
+            <IconAnt.Button backgroundColor={'rgba(0, 0, 0, .05)'}
+                            underlayColor={'rgba(0, 0, 0, .2)'}
+                            name={'arrowleft'}
+                            size={20}
+                            color={'white'}
+                            borderRadius={100}
+                            style={ styles.iconBack }
+                            onPress={ () => Alert.alert('Info', 'Back Button', [{text: 'OK'}], { cancelable: true }) } />
             <View style={styles.headerRightStick}>
-                <IconFA.Button backgroundColor={'transparent'} name={'qrcode'} size={24} color={'white'} style={ styles.iconNormalize } />
-                <IconEnt.Button backgroundColor={'transparent'} name={'cog'} size={24} color={'white'} style={ styles.iconNormalize } />
+                <IconFA.Button backgroundColor={'transparent'}
+                               underlayColor={'rgba(0, 0, 0, .2)'}
+                               name={'qrcode'}
+                               size={24}
+                               color={'white'}
+                               borderRadius={100}
+                               style={ styles.iconNormalize }
+                               onPress={ () => Alert.alert('Info', 'QRCode Button', [{text: 'OK'}], { cancelable: true }) } />
+                <IconEnt.Button backgroundColor={'transparent'}
+                                underlayColor={'rgba(0, 0, 0, .2)'}
+                                name={'cog'}
+                                size={24}
+                                color={'white'}
+                                borderRadius={100}
+                                style={ styles.iconNormalize }
+                                onPress={ () => Alert.alert('Info', 'Settings Button', [{text: 'OK'}], { cancelable: true }) } />
             </View>
         </View>
     );
@@ -32,11 +53,9 @@ const styles = StyleSheet.create({
         paddingLeft: 16,
     },
     iconBack: {
-        paddingVertical: 14,
+        paddingVertical: 16,
         paddingLeft: 16,
-        borderRadius: 50,
-        backgroundColor: 'rgba(0, 0, 0, .1)',
-    }
+    },
 });
 
 export default HeaderProfile;

@@ -2,7 +2,8 @@ import React from 'react';
 import { View, ScrollView, StatusBar, SafeAreaView, StyleSheet } from 'react-native';
 import HeaderProfile from '../components/UserProfile/HeaderProfile';
 import PageSafe from '../components/Compatibility/PageSafe';
-import UserCard from '../components/UserProfile/UserCard';
+import UserMainCard from '../components/UserProfile/UserMainCard';
+import UserMisc from '../components/UserProfile/UserMisc';
 
 const UserProfile = () => {
     return (
@@ -12,7 +13,8 @@ const UserProfile = () => {
                 <View style={ styles.profilePage }>
                     <HeaderProfile />
                     <ScrollView>
-                        <UserCard style={ styles.userCard } />
+                        <UserMainCard style={ styles.userCard } />
+                        <UserMisc />
                     </ScrollView>
                 </View>
             </SafeAreaView>

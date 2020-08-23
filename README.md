@@ -11,8 +11,8 @@ Therefore, here we are (while we are not complete). Prosperity is not a new proj
 
 The only thing to wait now is the making of the mobile client which was planned to be React Native based iOS and Android applications. I wish I would not be lazy or too busy and actually finishes the app for not too long.  
 
-### About SSO Login  
-It really sucks that Microsoft Office 365 SSO web interface is hard to bypass. Really, just letting the user logged in forever and forget is the most headache-free road to pick. It signs the user in and gives the access token back which can be used to fetch any data for weekly schedule, grade, finance, and other basic student pack you would expect. I apologize that I cannot do much for this.  
+### About Office365 SSO Login  
+Apparently, this way of logging in is much more preferred because security is ensured by Microsoft. The only downside to this is just slower sign in and off looking application login.  
 
 ### Will ProsperityMobile spy on me ?  
 No. The binaries that will be released are compiled from the source that is freely available for anyone to look at here at Github. If you have any problem, suggestion, or any feedback, you can create a new Github issue. 
