@@ -4,7 +4,7 @@ import Login from './Presenter/screens/Login';
 import UserProfile from './Presenter/screens/UserProfile';
 
 const App = () => {
-  return <Login />;
+  return <UserProfile />;
 };
 
 export default App;

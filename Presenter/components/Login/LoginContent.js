@@ -6,7 +6,7 @@ const LoginContent = () => { /* The Login Form */
     <>
       <Text style={styles.loginLabel}>Email</Text>
       <View style={styles.loginInput}>
-        <TextInput style={styles.loginInputText} />
+        <TextInput style={styles.loginInputText} autoCapitalize={'none'} autoCompleteType={'email'} textContentType={'emailAddress'} autoCorrect={false} spellCheck={false} />
       </View>
     </>
   );

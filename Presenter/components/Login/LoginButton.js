@@ -1,13 +1,12 @@
 import React from 'react';
-import { Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/AntDesign';
 
 const LoginButton = () => { /* The Custom Login Button */
   return (
-    <TouchableOpacity style={ styles.customSignIn }>
-      <Text style={ styles.signInText }>Sign In <Icon name={'arrowright'} size={20} /></Text>
-
-    </TouchableOpacity>
+    <TouchableHighlight underlayColor={'#B73333'} onPress={() => alert('Login not implemented yet!')} style={ styles.customSignIn }>
+        <Text style={ styles.signInText }>Sign In <Icon name={'arrowright'} size={20} /></Text>
+    </TouchableHighlight>
   );
 };
 
@@ -22,7 +21,6 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 50,
     borderTopLeftRadius: 50,
     marginBottom: 14,
-    position: 'relative',
     transform: [
       {
         scaleY: 2,
