@@ -24,11 +24,13 @@ const styles = StyleSheet.create({
     courseTagsContainer: {
         flexDirection: 'row',
         marginTop: 10,
+        flexWrap: 'wrap',
     },
     courseTag: {
         paddingVertical: 4,
         paddingHorizontal: 8,
         borderRadius: 10,
+        marginBottom: 4,
     },
     courseTagText: {
         color: 'white',

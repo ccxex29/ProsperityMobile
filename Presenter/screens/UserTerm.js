@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StatusBar, SafeAreaView } from 'react-native';
 import PageSafe from '../components/Compatibility/PageSafe';
 import HeaderTerm from '../components/UserTerm/HeaderTerm';

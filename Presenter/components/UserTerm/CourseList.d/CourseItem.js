@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
         flex: 6,
         flexWrap: 'wrap',
         flexShrink: 1,
-
     },
     coursePropertiesRight: {
         flex: 1,

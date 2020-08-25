@@ -17,12 +17,13 @@ const CourseScore = props => {
 
 const styles = StyleSheet.create({
     courseScoreListContainer: {
-        marginTop: 12,
+        marginTop: 8,
     },
     courseScoreList: {
         fontFamily: 'Montserrat-Regular',
         fontSize: 14,
         color: 'white',
+        marginBottom: 4,
     },
 });
 
