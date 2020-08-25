@@ -1,10 +1,11 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 
 const CommonListBodyScrollable = (props) => {
     return (
         <ScrollView style={ styles.screenBodyContainer }>
             { props.children }
+            <View style={ styles.bottomPad } />
         </ScrollView>
     );
 };
@@ -14,6 +15,10 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#333',
         padding: 24,
+    },
+    bottomPad: {
+        height: 32,
+        backgroundColor: 'transparent',
     },
 });
 
