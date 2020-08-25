@@ -1,20 +1,21 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import IconMaterial from 'react-native-vector-icons/dist/MaterialIcons';
+import TermSelector from '../UserTerm/TermSelector';
 
 const CommonListHeaderParallax = props => {
     return (
         <View style={ styles.screenTitleContainer }>
-            <Text style={[ styles.screenTitle, props.headerIsTerm ? { marginBottom: 18 } : { marginBottom: 0 } ]}>{ props.headerTitle }</Text>
-            { props.headerIsTerm ?
-                <View style={ styles.termSelector }>
-                    <Text style={ styles.termSelectorText }>2019/2020 - Odd Semester Term</Text>
-                    <IconMaterial name={'keyboard-arrow-down'}
-                    color={'white'}
-                    size={13}
-                    style={{ marginTop: 3, marginLeft: 4 }} />
-                </View>
-            : null }
+            <Text
+                style={[
+                    styles.screenTitle,
+                    props.headerIsMain ? { marginBottom: 0, marginTop: 18 } : { marginBottom: 18 },
+                ]}>
+                { props.headerTitle }
+            </Text>
+            { !props.headerIsMain ?
+                <TermSelector /> : null
+            }
         </View>
     );
 };
@@ -22,22 +23,9 @@ const CommonListHeaderParallax = props => {
 const styles = StyleSheet.create({
     screenTitle: {
         fontFamily: 'Gilroy-ExtraBold',
-        letterSpacing: 0,
+        letterSpacing: 0.25,
         color: 'white',
         fontSize: 52,
-    },
-    termSelector: {
-        backgroundColor: 'rgba(0, 0, 0, .2)',
-        paddingVertical: 10,
-        paddingHorizontal: 16,
-        alignSelf: 'center',
-        borderRadius: 20,
-        flexDirection: 'row',
-    },
-    termSelectorText: {
-        color: 'white',
-        fontFamily: 'Montserrat-Regular',
-        fontSize: 13,
     },
     screenTitleContainer: {
         paddingHorizontal: 48,
