@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, StatusBar, SafeAreaView} from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
 import PageSafe from '../components/Compatibility/PageSafe';
 import HeaderTerm from '../components/UserTerm/HeaderTerm';
 import CommonListHeaderParallax from '../components/CommonList/CommonListHeaderParallax';
@@ -17,8 +17,5 @@ const UserTerm = () => {
         </>
     );
 };
-
-const styles = StyleSheet.create({
-});
 
 export default UserTerm;

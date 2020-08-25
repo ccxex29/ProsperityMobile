@@ -41,12 +41,12 @@ const styles = StyleSheet.create({
     },
     courseProperties: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
     },
     coursePropertiesLeft: {
         flex: 6,
         flexWrap: 'wrap',
         flexShrink: 1,
+
     },
     coursePropertiesRight: {
         flex: 1,
