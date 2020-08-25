@@ -4,7 +4,7 @@ import {Text, View, StyleSheet} from 'react-native';
 const UserInformation = () => {
     return (
         <View style={ styles.userInfo }>
-            <Text style={ styles.userName }>MR FOO BAR</Text>
+            <Text style={ styles.userName }>MR FOOZY BAR</Text>
             <Text style={ styles.userId }>11411113312</Text>
             <Text style={ styles.userEducation }>Computer Science</Text>
         </View>
@@ -14,20 +14,24 @@ const UserInformation = () => {
 const styles = StyleSheet.create({
     userInfo: {
         justifyContent: 'center',
-        marginHorizontal: 24,
-        marginRight: 96,
+        marginLeft: 24,
+        // marginRight: 120,
+        flexShrink: 1,
     },
     userName: {
-        fontSize: 24,
+        fontSize: 22,
         fontFamily: 'Montserrat-Bold',
+        color: 'black',
     },
     userId: {
-        fontSize: 20,
-        fontFamily: 'Montserrat-Regular',
+        fontSize: 18,
+        fontFamily: 'Montserrat-Medium',
+        color: '#333',
     },
     userEducation: {
-        fontSize: 18,
-        fontFamily: 'Montserrat-Light',
+        fontSize: 16,
+        fontFamily: 'Montserrat-Medium',
+        color: '#555',
     },
 });
 

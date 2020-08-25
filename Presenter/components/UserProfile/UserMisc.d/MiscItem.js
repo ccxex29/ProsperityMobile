@@ -5,7 +5,8 @@ import Icon from 'react-native-vector-icons/dist/Ionicons';
 const MiscItem = props => {
     return (
         <TouchableHighlight underlayColor={'#DDD'}
-                            onPress={ () => Alert.alert('Info', 'Action Test', [{text: 'OK'}], { cancelable: true }) } style={ styles.itemContainer }>
+                            onPress={ () => {} }
+                            style={ styles.itemContainer }>
             <View style={ styles.itemContainerView }>
                 <Text style={ styles.itemText }>{ props.itemText }</Text>
                 <Icon name={'arrow-forward-circle-outline'} size={28} color={'black'} />
