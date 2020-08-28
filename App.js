@@ -6,7 +6,7 @@ import UserTerm from './Presenter/screens/UserTerm';
 import UserSchedule from './Presenter/screens/UserSchedule';
 
 const App = () => {
-  return <UserTerm />;
+  return <UserSchedule />;
 };
 
 export default App;

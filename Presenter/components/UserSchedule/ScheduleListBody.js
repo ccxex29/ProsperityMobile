@@ -1,7 +1,8 @@
 import React from 'react';
+import { View, StyleSheet } from 'react-native';
 import CommonListBodyScrollable from '../CommonList/CommonListBodyScrollable';
 
-const CourseListBody = () => {
+const ScheduleListBody = () => {
     return (
         <CommonListBodyScrollable>
 
@@ -9,4 +10,8 @@ const CourseListBody = () => {
     );
 };
 
-export default CourseListBody;
+const styles = StyleSheet.create({
+
+});
+
+export default ScheduleListBody;
