@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import IconMaterial from 'react-native-vector-icons/dist/MaterialIcons';
 import TermSelector from '../UserTerm/TermSelector';
 
 const CommonListHeaderParallax = props => {
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
         fontSize: 52,
     },
     screenTitleContainer: {
-        paddingHorizontal: 48,
+        paddingHorizontal: 24 + 16,
         alignItems: 'flex-start',
         paddingBottom: 36,
     },

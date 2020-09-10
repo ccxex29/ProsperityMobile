@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         padding: 16,
         backgroundColor: '#666',
         borderRadius: 6,
-        marginBottom: 16,
+        marginBottom: 24,
     },
     courseName: {
         color: 'white',

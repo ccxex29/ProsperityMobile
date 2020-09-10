@@ -7,7 +7,6 @@ import {
     View,
     SafeAreaView,
 } from 'react-native';
-import {WebView} from 'react-native-webview';
 import CirclesBg from '../components/Login/CirclesBg';
 import LoginTitle from '../components/Login/LoginTitle';
 import LoginContent from '../components/Login/LoginContent';
