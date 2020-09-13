@@ -27,9 +27,14 @@ const Login = () => {
                             <LoginTitle />
                         </View>
                         <View style={ styles.loginContent }>
-                            <LoginContent />
+                            <LoginContent
+                                emailValue={ '' }
+                                passwdValue={ '' }
+                                emailInputHandler={ () => {} }
+                                passwdInputHandler={ () => {} }
+                            />
                         </View>
-                        <LoginButton />
+                        <LoginButton onPress={() => alert('Login not implemented yet!')} />
                     </View>
                 </TouchableWithoutFeedback>
             </SafeAreaView>

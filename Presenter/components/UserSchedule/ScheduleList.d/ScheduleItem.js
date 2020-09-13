@@ -16,6 +16,7 @@ const ScheduleItem = props => {
                             courseName={ course.courseName }
                             courseCode={ course.courseCode }
                             courseTime={ course.courseTime }
+                            key={ course.key }
                             style={ (index !== props.courseList.length - 1) && { marginBottom: 12 } }
                         />);
                 })

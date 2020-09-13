@@ -1,10 +1,17 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
+import { Text, StyleSheet, TouchableHighlight, Keyboard } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/AntDesign';
 
-const LoginButton = () => { /* The Custom Login Button */
+const LoginButton = props => { /* The Custom Login Button */
   return (
-    <TouchableHighlight underlayColor={'#B73333'} onPress={() => alert('Login not implemented yet!')} style={ styles.customSignIn }>
+    <TouchableHighlight
+        underlayColor={'#B73333'}
+        onPress={() => {
+          props.onPress();
+          Keyboard.dismiss();
+        }}
+        style={ styles.customSignIn }
+    >
         <Text style={ styles.signInText }>Sign In <Icon name={'arrowright'} size={20} /></Text>
     </TouchableHighlight>
   );

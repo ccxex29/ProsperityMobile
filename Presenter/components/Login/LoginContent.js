@@ -1,12 +1,34 @@
 import React from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 
-const LoginContent = () => { /* The Login Form */
+const LoginContent = props => { /* The Login Form */
   return (
     <>
       <Text style={styles.loginLabel}>Email</Text>
       <View style={styles.loginInput}>
-        <TextInput style={styles.loginInputText} autoCapitalize={'none'} autoCompleteType={'email'} textContentType={'emailAddress'} autoCorrect={false} spellCheck={false} />
+        <TextInput
+            style={ styles.loginInputText }
+            autoCapitalize={'none'}
+            autoCompleteType={'email'}
+            textContentType={'emailAddress'}
+            autoCorrect={false}
+            spellCheck={false}
+            onChangeText={ props.emailInputHandler }
+            value={ props.emailValue }
+        />
+      </View>
+      <Text style={styles.loginLabel}>Password</Text>
+      <View style={styles.loginInput}>
+        <TextInput
+            style={ styles.loginInputText }
+            autoCapitalize={'none'}
+            autoCompleteType={'password'}
+            textContentType={'password'}
+            autoCorrect={false}
+            spellCheck={false}
+            onChangeText={ props.passwdInputHandler }
+            value={ props.passwdValue }
+        />
       </View>
     </>
   );
